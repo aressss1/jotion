@@ -1,5 +1,6 @@
 'use client'
 
+import ConfirmModal from "@/components/modals/confirm-modal";
 import { Spinner } from "@/components/spinner";
 import { Input } from "@/components/ui/input";
 import { api } from "@/convex/_generated/api";
@@ -18,24 +19,24 @@ const TrashBox = () => {
     const restore = useMutation(api.documents.restore)
     const remove = useMutation(api.documents.remove)
 
-    const [search , setSearch] = useState("")
+    const [search, setSearch] = useState("")
 
     const filteredDocuments = documents?.filter((document) => {
         return document.title.toLowerCase().includes(search.toLowerCase());
-      });
+    });
 
     const onClick = (documentId: string) => {
         router.push(`/documents/${documentId}`)
     }
 
     const onRestore = (
-        event: React.MouseEvent<HTMLDivElement , MouseEvent>,
+        event: React.MouseEvent<HTMLDivElement, MouseEvent>,
         documentId: Id<"documents">
     ) => {
         event?.stopPropagation();
         const promise = restore({ id: documentId })
 
-        toast.promise(promise , {
+        toast.promise(promise, {
             loading: "Restoring note...",
             success: "Note restored!",
             error: "Failed to restore note..."
@@ -47,13 +48,13 @@ const TrashBox = () => {
     ) => {
         const promise = remove({ id: documentId })
 
-        toast.promise(promise , {
+        toast.promise(promise, {
             loading: "Deleting note...",
             success: "Note deleted!",
             error: "Failed to delete note..."
         })
 
-        if(params.documentId === documentId){
+        if (params.documentId === documentId) {
             router.push("/document")
         }
     }
@@ -61,16 +62,16 @@ const TrashBox = () => {
     if (documents === undefined) {
         return (
             <div className="h-full flex items-center justify-center p-4" >
-                <Spinner size="lg"  />
+                <Spinner size="lg" />
             </div>
         )
     }
 
-    return ( 
+    return (
         <div className="text-sm" >
             <div className="flex items-center gap-x-1 p-2" >
                 <Search className="h-4 w-4" />
-                <Input 
+                <Input
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     className="h-7 px-2 focus-visible:ring-transparent bg-secondary"
@@ -92,25 +93,29 @@ const TrashBox = () => {
                             {document.title}
                         </span>
                         <div className="flex items-center"  >
-                            <div 
-                                onClick={(e) => onRestore(e, document._id) }
+                            <div
+                                onClick={(e) => onRestore(e, document._id)}
                                 role="banner"
                                 className="rounded-sm p-2 hover:bg-neutral-200"
                             >
                                 <Undo className="h-4 w-4 text-muted-foreground" />
                             </div>
-                            <div
-                                role="button"
-                                className="rounded-sm p-2 hover:bg-neutral-200"
-                            >
-                                <Trash  className="h-4 w-4 text-muted-foreground" />
-                            </div>
+
+                            <ConfirmModal onConfirm={() => onRemove(document._id) } >
+                                <div
+                                    role="button"
+                                    className="rounded-sm p-2 hover:bg-neutral-200"
+                                >
+                                    <Trash className="h-4 w-4 text-muted-foreground" />
+                                </div>
+                            </ConfirmModal>
+
                         </div>
                     </div>
                 ))}
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default TrashBox;
