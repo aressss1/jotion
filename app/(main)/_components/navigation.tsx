@@ -1,18 +1,18 @@
-import { 
-    ChevronLeft, 
-    MenuIcon, 
-    Plus, 
-    PlusCircle, 
-    Search, 
-    Settings, 
+import {
+    ChevronLeft,
+    MenuIcon,
+    Plus,
+    PlusCircle,
+    Search,
+    Settings,
     Trash
 } from "lucide-react";
 import { usePathname } from "next/navigation";
-import { 
-    ElementRef, 
-    useEffect, 
-    useRef, 
-    useState 
+import {
+    ElementRef,
+    useEffect,
+    useRef,
+    useState
 } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import { useMutation } from "convex/react";
@@ -39,19 +39,19 @@ const Navigation = () => {
     const [isCollapsed, setIsCollapsed] = useState(isMobile)
 
     useEffect(() => {
-        if (isMobile ) {
+        if (isMobile) {
             collapse()
         } else {
             resetWidth()
         }
-    } , [isMobile])
+    }, [isMobile])
 
     useEffect(() => {
-        if(isMobile) {
+        if (isMobile) {
             collapse()
         }
-    } , [pathname , isMobile])
-    
+    }, [pathname, isMobile])
+
 
     const handleMouseDown = (
         event: React.MouseEvent<HTMLDivElement, MouseEvent>
@@ -85,7 +85,7 @@ const Navigation = () => {
     }
 
     const resetWidth = () => {
-        if(sidebarRef.current && navbarRef.current) {
+        if (sidebarRef.current && navbarRef.current) {
             setIsCollapsed(false);
             setIsResetting(true);
 
@@ -98,19 +98,19 @@ const Navigation = () => {
                 "left",
                 isMobile ? "100%" : "240px"
             );
-            setTimeout(() => setIsResetting(false) , 300)
+            setTimeout(() => setIsResetting(false), 300)
         }
     }
 
     const collapse = () => {
         if (sidebarRef.current && navbarRef.current) {
-          setIsCollapsed(true);
-          setIsResetting(true);
-    
-          sidebarRef.current.style.width = "0";
-          navbarRef.current.style.setProperty("width", "100%");
-          navbarRef.current.style.setProperty("left", "0");
-          setTimeout(() => setIsResetting(false), 300);
+            setIsCollapsed(true);
+            setIsResetting(true);
+
+            sidebarRef.current.style.width = "0";
+            navbarRef.current.style.setProperty("width", "100%");
+            navbarRef.current.style.setProperty("left", "0");
+            setTimeout(() => setIsResetting(false), 300);
         }
     }
 
@@ -142,46 +142,47 @@ const Navigation = () => {
                 </div>
                 <div>
                     <UserItem />
-                    <Item 
+                    <Item
                         label="Search"
                         icon={Search}
                         isSearch
-                        onClick={() => {}}
+                        onClick={() => { }}
                     />
-                    <Item 
+                    <Item
                         label="Settings"
                         icon={Settings}
-                        onClick={() => {}}
+                        onClick={() => { }}
                     />
-                    <Item 
+                    <Item
                         onClick={handleCreate}
                         label="New Page"
-                        icon={PlusCircle} 
+                        icon={PlusCircle}
                     />
                 </div>
                 <div className="mt-4" >
                     <DocumentList />
-                    <Item 
+                    <Item
                         onClick={handleCreate}
                         icon={Plus}
                         label="Add a page"
                     />
                     <Popover>
                         <PopoverTrigger className="w-full mt-4" >
-                            <Item  label="Trash" icon={Trash} />
+                            <Item label="Trash" icon={Trash} />
                         </PopoverTrigger>
+                        <PopoverContent
+                            className="p-0 w-72"
+                            side={isMobile ? "bottom" : "right"}
+                        >
+                            <TrashBox />
+                        </PopoverContent>
                     </Popover>
-                    <PopoverContent
-                        className="p-0 w-72"
-                        side={isMobile ? "bottom" : "right"}
-                    >
-                        <TrashBox />
-                    </PopoverContent>
+
                 </div>
-                <div 
-                onMouseDown={handleMouseDown}
-                onClick={resetWidth}
-                className="opacity-0 group-hover/sidebar:opacity-100 transition cursor-ew-resize absolute h-full w-1 bg-primary/10 right-0 top-0 " />
+                <div
+                    onMouseDown={handleMouseDown}
+                    onClick={resetWidth}
+                    className="opacity-0 group-hover/sidebar:opacity-100 transition cursor-ew-resize absolute h-full w-1 bg-primary/10 right-0 top-0 " />
             </aside>
             <div
                 ref={navbarRef}
@@ -192,7 +193,7 @@ const Navigation = () => {
                 )}
             >
                 <nav className="bg-transparent px-3 py-2 w-full" >
-                    {isCollapsed && <MenuIcon onClick={resetWidth}  role="button" className="h-6 w-6 text-muted-foreground" />}
+                    {isCollapsed && <MenuIcon onClick={resetWidth} role="button" className="h-6 w-6 text-muted-foreground" />}
                 </nav>
             </div>
         </>
