@@ -32,6 +32,7 @@ import Item from "./item";
 import UserItem from "./user-item";
 import DocumentList from "./document-list";
 import TrashBox from "./trash-box";
+import Navbar from "./navbar";
 
 const Navigation = () => {
     const pathname = usePathname()
