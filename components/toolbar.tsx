@@ -10,6 +10,7 @@ import TextareaAutosize from 'react-textarea-autosize'
 
 import { api } from "@/convex/_generated/api";
 import { Doc } from "@/convex/_generated/dataModel";
+import { useCoverImage } from "@/hooks/use-cover-image";
 
 interface ToolbarProps {
     initialData : Doc<"documents">;
@@ -23,6 +24,7 @@ const Toolbar = ({
     const inputRef = useRef<ElementRef<"textarea">>(null);
     const [isEditing, setIsEditing] = useState(false);
     const [value , setValue] = useState(initialData.title)
+    const coverImageModal = useCoverImage()
 
     const update = useMutation(api.documents.update)
     const removeIcon = useMutation(api.documents.removeIcon)
@@ -109,7 +111,7 @@ const Toolbar = ({
                 )}
                 {!initialData.coverImage && !preview && (
                     <Button
-                        onClick={() => {}}
+                        onClick={coverImageModal.onOpen}
                         className="text-muted-foreground text-sm"
                         variant="outline"
                         size="sm"
