@@ -24,7 +24,7 @@ const Toolbar = ({
     const inputRef = useRef<ElementRef<"textarea">>(null);
     const [isEditing, setIsEditing] = useState(false);
     const [value , setValue] = useState(initialData.title)
-    const coverImageModal = useCoverImage()
+    const coverImage = useCoverImage()
 
     const update = useMutation(api.documents.update)
     const removeIcon = useMutation(api.documents.removeIcon)
@@ -111,7 +111,7 @@ const Toolbar = ({
                 )}
                 {!initialData.coverImage && !preview && (
                     <Button
-                        onClick={coverImageModal.onOpen}
+                        onClick={coverImage.onOpen}
                         className="text-muted-foreground text-sm"
                         variant="outline"
                         size="sm"
