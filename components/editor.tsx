@@ -1,6 +1,5 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import {
   BlockNoteEditor,
   PartialBlock
@@ -24,7 +23,6 @@ const Editor = ({
   initialContent,
   editable
 }: EditorProps) => {
-  const { resolvedTheme } = useTheme();
   const { edgestore } = useEdgeStore();
 
   const handleUpload = async (file: File) => {
@@ -52,7 +50,7 @@ const Editor = ({
     <div>
       <BlockNoteView
         editor={editor}
-        theme={resolvedTheme === "dark" ? "dark" : "light"}
+        // theme={"light"}
       />
     </div>
   )
