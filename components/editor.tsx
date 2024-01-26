@@ -50,7 +50,7 @@ const Editor = ({
     <div>
       <BlockNoteView
         editor={editor}
-        // theme={"light"}
+        theme={"light"}
       />
     </div>
   )
