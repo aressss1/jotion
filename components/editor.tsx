@@ -37,7 +37,6 @@ const Editor = ({
       editable,
       initialContent: 
       initialContent 
-      // @ts-ignore
       ? JSON.parse(initialContent) as PartialBlock[] 
       : undefined,
     onEditorContentChange: (editor) => {
