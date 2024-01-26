@@ -13,7 +13,6 @@ const Error = () => {
         height="300"
         width="300"
         alt="Error"
-        className="dark:hidden"
       />
       <h2 className="text-xl font-medium">
         Something went wrong!
