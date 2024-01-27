@@ -62,13 +62,14 @@ const Item = ({
         event.stopPropagation();
         if(!id) return;
         const promise = archieve({ id })
-            .then(() => router.push("/documents"))
 
         toast.promise(promise , {
             loading: "Moving to trash...",
             success: 'Note moved to trash!',
             error: 'Failed to archieve note.'
         })
+
+        router.push("/documents")
     }
 
     const handleExpand = (
