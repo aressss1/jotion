@@ -1,8 +1,8 @@
 "use client";
 
 import {
-  BlockNoteEditor,
-  PartialBlock
+  BlockNoteEditor, 
+  PartialBlock,
 } from "@blocknote/core";
 import {
   BlockNoteView,
@@ -49,7 +49,7 @@ const Editor = ({
     <div>
       <BlockNoteView
         editor={editor}
-        theme={"dark"}
+        theme={"light"}
       />
     </div>
   )
