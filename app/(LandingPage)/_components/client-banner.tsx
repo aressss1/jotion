@@ -68,7 +68,7 @@ const ClientBanner = () => {
     ]
 
     return (
-        <div className="flex justify-center items-center w-full flex-col py-20 " >
+        <div className="flex justify-center items-center w-full flex-col py-20 gap-8" >
             <div className="flex flex-col gap-4" >
                 <div className="text-center text-zinc-950 text-5xl font-bold leading-10">
                     Millions run on Notion every day
@@ -77,28 +77,28 @@ const ClientBanner = () => {
                     Powering the world&apos;s best teams, from next-generation startups to established enterprises.
                 </div>
             </div>
-            <div className="flex flex-col gap-4" >
-                <div className="flex flex-row justify-center items-center gap-6 " >
+            <div className="flex flex-col gap-8" >
+                <div className="flex flex-row justify-center items-center gap-10 " >
                     {clientRow1.map((c) => (
                         <Image
                             key={c.alt}
                             src={c.src}
                             alt={c.alt}
-                            className="h-7 w-20"
+                            className="h-7 w-24"
                         />
                     ))}
                 </div>
-                <div className="flex flex-row justify-center items-center gap-6 " >
+                <div className="flex flex-row justify-center items-center gap-7 " >
                     {clientRow2.map((c) => (
                         <Image
                             key={c.alt}
                             src={c.src}
                             alt={c.alt}
-                            className="h-6 w-24"
+                            className="h-6 w-20"
                         />
                     ))}
                 </div>
-                <div className="flex flex-row justify-center items-center gap-6 " >
+                <div className="flex flex-row justify-center items-center gap-7 " >
                     {clientRow3.map((c) => (
                         <Image
                             key={c.alt}
