@@ -34,10 +34,10 @@ const Hero = () => {
                             </SignInButton>
                         )}
                         {isAuthenticated && !isLoading && (
-                            <Button variant="ghost" size="lg" asChild>
+                            <Button size="lg" asChild>
                                 <Link href="/documents">
                                     Enter Jotion
-                                    <ArrowRight />
+                                    <ArrowRight className="pl-1" />
                                 </Link>
                             </Button>
                         )}

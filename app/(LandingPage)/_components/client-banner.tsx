@@ -71,9 +71,12 @@ const ClientBanner = () => {
         <div className="flex justify-center items-center w-full flex-col py-12 md:py-20 gap-8" >
             <div className="flex flex-col gap-4" >
                 <div className="text-center text-zinc-950 text-4xl lg:text-5xl font-bold leading-10">
-                    Millions run on Notion every day
+                    Millions run on Jotion every day
                 </div>
-                <div className="text-center px-5 md:px-0 text-zinc-950 text-base font-normal leading-snug tracking-tight">
+                <div className="hidden md:flex text-center px-5 md:px-0 text-zinc-950 text-base font-normal leading-snug tracking-tight">
+                    Powering the world&apos;s best teams, from next-generation startups <br /> to established enterprises.
+                </div>
+                <div className="text-center md:hidden px-5 md:px-0 text-zinc-950 text-base font-normal leading-snug tracking-tight">
                     Powering the world&apos;s best teams, from next-generation startups to established enterprises.
                 </div>
             </div>
