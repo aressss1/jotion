@@ -84,7 +84,7 @@ const ClientBanner = () => {
                             key={c.alt}
                             src={c.src}
                             alt={c.alt}
-                            className="lg:h-7 lg:w-24 w-[3.25rem] md:h-6 h-5"
+                            className="lg:h-7 md:h-6 h-5 lg:w-24 w-11 "
                         />
                     ))}
                 </div>
@@ -94,7 +94,7 @@ const ClientBanner = () => {
                             key={c.alt}
                             src={c.src}
                             alt={c.alt}
-                            className="lg:h-6 lg:w-20 md:w-16 md:h-5 w-12 h-4 "
+                            className="lg:h-6 md:h-5 h-4 lg:w-20 md:w-16 w-11  "
                         />
                     ))}
                 </div>
@@ -104,7 +104,7 @@ const ClientBanner = () => {
                             key={c.alt}
                             src={c.src}
                             alt={c.alt}
-                            className="lg:w-28 h-6 w-20  md:h-5"
+                            className="lg:w-28 w-20  md:h-5 h-6 "
                         />
                     ))}
                 </div>
