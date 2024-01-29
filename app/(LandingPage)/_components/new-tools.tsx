@@ -26,7 +26,7 @@ const NewToolsSection = () => {
     ]
 
     return (
-        <div className="flex justify-center items-center  py-10 w-full " >
+        <div className="flex justify-center items-center flex-col gap-6 py-10 w-full " >
             <div className="flex flex-col gap-2 text-center " >
                 <div className=" text-zinc-950 text-5xl font-bold">
                     New tools, new ways to work
@@ -35,7 +35,7 @@ const NewToolsSection = () => {
                     We also built in some advanced features for you.
                 </div>
             </div>
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-6 " >
+            <div className="mx-auto grid md:grid-cols-2 grid-cols-1 gap-6 " >
                 {toolsContent.map((tool) => (
                     <Card key={tool.toolName} className="text-left"  >
                         <CardHeader>
@@ -45,10 +45,10 @@ const NewToolsSection = () => {
                                     alt={tool.toolName}
                                 />
                             </div>
-                            <CardTitle className="text-zinc-950 text-lg font-bold" >
+                            <CardTitle className="text-zinc-950 pt-3 text-lg font-bold" >
                                 {tool.toolName}
                             </CardTitle>
-                            <CardContent className="text-black text-opacity-60 text-base font-normal leading-normal" >
+                            <CardContent className="text-black text-opacity-60 text-base font-normal leading-normal pl-0 pb-3 " >
                                 {tool.toolDesc}
                             </CardContent>
                         </CardHeader>
