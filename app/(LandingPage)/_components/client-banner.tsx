@@ -70,7 +70,7 @@ const ClientBanner = () => {
     return (
         <div className="flex justify-center items-center w-full flex-col py-20 gap-8" >
             <div className="flex flex-col gap-4" >
-                <div className="text-center text-zinc-950 text-5xl font-bold leading-10">
+                <div className="text-center text-zinc-950 text-4xl lg:text-5xl font-bold leading-10">
                     Millions run on Notion every day
                 </div>
                 <div className="text-center text-zinc-950 text-base font-normal leading-snug tracking-tight">
