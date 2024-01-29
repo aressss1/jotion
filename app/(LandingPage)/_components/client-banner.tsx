@@ -68,33 +68,33 @@ const ClientBanner = () => {
     ]
 
     return (
-        <div className="flex justify-center items-center w-full flex-col py-20 gap-8" >
+        <div className="flex justify-center items-center w-full flex-col py-12 md:py-20 gap-8" >
             <div className="flex flex-col gap-4" >
                 <div className="text-center text-zinc-950 text-4xl lg:text-5xl font-bold leading-10">
                     Millions run on Notion every day
                 </div>
-                <div className="text-center text-zinc-950 text-base font-normal leading-snug tracking-tight">
+                <div className="text-center p-1 md:p-0 text-zinc-950 text-base font-normal leading-snug tracking-tight">
                     Powering the world&apos;s best teams, from next-generation startups to established enterprises.
                 </div>
             </div>
             <div className="flex flex-col gap-8" >
-                <div className="flex flex-row justify-center items-center gap-10 " >
+                <div className="flex flex-row justify-center items-center gap-3 md:gap-10 " >
                     {clientRow1.map((c) => (
                         <Image
                             key={c.alt}
                             src={c.src}
                             alt={c.alt}
-                            className="h-7 w-24"
+                            className="lg:h-7 lg:w-24 w-[3.25rem] md:h-6 h-5"
                         />
                     ))}
                 </div>
-                <div className="flex flex-row justify-center items-center gap-7 " >
+                <div className="flex flex-row justify-center items-center gap-3 md:gap-7 " >
                     {clientRow2.map((c) => (
                         <Image
                             key={c.alt}
                             src={c.src}
                             alt={c.alt}
-                            className="h-6 w-20"
+                            className="lg:h-6 lg:w-20 md:w-16 md:h-5 w-12 h-4 "
                         />
                     ))}
                 </div>
@@ -104,7 +104,7 @@ const ClientBanner = () => {
                             key={c.alt}
                             src={c.src}
                             alt={c.alt}
-                            className="w-28 h-6"
+                            className="lg:w-28 h-6 w-20  md:h-5"
                         />
                     ))}
                 </div>
