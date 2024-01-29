@@ -13,14 +13,14 @@ const Hero = () => {
     const { isAuthenticated, isLoading } = useConvexAuth();
 
     return (
-        <div className="mx-auto py-10 " >
+        <div className="mx-auto py-10 w-fit " >
             <div className="flex gap-2" >
                 <div className="flex flex-col space-y-2" >
                     <div className=" text-zinc-950 text-5xl font-bold leading-10">
                         Tired of Notion?<br />Say hi to Jotion
                     </div>
                     <div className=" text-black text-opacity-60 text-lg font-medium leading-7">
-                        Stop switching between apps to get work done. Keep info flowing in and out of Notion and reduce overhead with our connections.
+                        Jotion is the connected workspace where<br />better, faster work happens
                     </div>
                     <div>
                         {isLoading && (
