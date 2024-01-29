@@ -8,7 +8,7 @@ import { ArrowRight, Link } from "lucide-react";
 import Image from "next/image";
 
 
-const TryTodaySection = () => {
+const TryToday = () => {
     const { isAuthenticated, isLoading } = useConvexAuth();
 
     return (
@@ -56,4 +56,4 @@ const TryTodaySection = () => {
     );
 }
 
-export default TryTodaySection;
+export default TryToday;

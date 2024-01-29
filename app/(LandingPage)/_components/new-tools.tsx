@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 
-const NewToolsSection = () => {
+const NewTools = () => {
     const toolsContent = [
         {
             imgSrc: "/tools/t-1.png",
@@ -60,4 +60,4 @@ const NewToolsSection = () => {
     );
 }
 
-export default NewToolsSection;
+export default NewTools;

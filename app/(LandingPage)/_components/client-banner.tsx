@@ -73,12 +73,10 @@ const ClientBanner = () => {
                 <div className="text-center text-zinc-950 text-4xl lg:text-5xl font-bold leading-10">
                     Millions run on Jotion every day
                 </div>
-                <div className="hidden md:flex text-center px-5 md:px-0 text-zinc-950 text-base font-normal leading-snug tracking-tight">
+                <div className="flex text-center px-5  text-zinc-950 text-base font-normal leading-snug tracking-tight">
                     Powering the world&apos;s best teams, from next-generation startups <br /> to established enterprises.
                 </div>
-                <div className="text-center md:hidden px-5 md:px-0 text-zinc-950 text-base font-normal leading-snug tracking-tight">
-                    Powering the world&apos;s best teams, from next-generation startups to established enterprises.
-                </div>
+                
             </div>
             <div className="flex flex-col gap-8" >
                 <div className="flex flex-row justify-center items-center gap-3 md:gap-10 " >
