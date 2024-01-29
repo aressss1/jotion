@@ -14,9 +14,9 @@ const Hero = () => {
 
     return (
         <div className="mx-auto py-10 w-fit " >
-            <div className="flex gap-2" >
-                <div className="flex flex-col space-y-2" >
-                    <div className=" text-zinc-950 text-5xl font-bold leading-10">
+            <div className="flex gap-5" >
+                <div className="flex flex-col gap-6" >
+                    <div className=" text-zinc-950 text-5xl font-bold ">
                         Tired of Notion?<br />Say hi to Jotion
                     </div>
                     <div className=" text-black text-opacity-60 text-lg font-medium leading-7">
@@ -43,10 +43,12 @@ const Hero = () => {
                         )}
                     </div>
                 </div>
-                <Image
-                    src="/hero.png"
-                    alt="Hero Image"
-                />
+                <div className="flex items-center justify-center" >
+                    <Image
+                        src="/hero.png"
+                        alt="Hero Image"
+                    />
+                </div>
             </div>
 
         </div>
