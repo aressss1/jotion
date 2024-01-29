@@ -81,7 +81,7 @@ const ClientBanner = () => {
             <div className="flex flex-col gap-8" >
                 <div className="flex flex-row justify-center items-center gap-3 md:gap-10 " >
                     {clientRow1.map((c) => (
-                        <Image
+                         <Image
                             key={c.alt}
                             src={c.src}
                             alt={c.alt}
