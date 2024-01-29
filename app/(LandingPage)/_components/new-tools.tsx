@@ -37,7 +37,7 @@ const NewToolsSection = () => {
             </div>
             <div className="mx-auto grid md:grid-cols-2 grid-cols-1 gap-6 " >
                 {toolsContent.map((tool) => (
-                    <Card key={tool.toolName} className="text-left"  >
+                    <Card key={tool.toolName} className="text-left shadow-lg max-w-[367px] "  >
                         <CardHeader>
                             <div>
                                 <Image
