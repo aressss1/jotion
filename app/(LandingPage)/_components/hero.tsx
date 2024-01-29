@@ -15,11 +15,11 @@ const Hero = () => {
     return (
         <div className="flex justify-center items-center  py-10 w-full " >
             <div className="flex flex-col-reverse lg:flex-row gap-5" >
-                <div className="flex flex-col gap-6 text-center " >
-                    <div className=" text-zinc-950 text-5xl font-bold ">
+                <div className="flex flex-col gap-6 text-center lg:text-left " >
+                    <div className=" text-zinc-950 text-4xl md:text-5xl font-bold ">
                         Tired of Notion?<br />Say hi to Jotion
                     </div>
-                    <div className=" text-black text-opacity-60 text-lg font-medium leading-7">
+                    <div className=" text-black max-w-96 text-opacity-60 text-lg font-medium leading-7">
                         Jotion is the connected workspace where better, faster work happens
                     </div>
                     <div>
