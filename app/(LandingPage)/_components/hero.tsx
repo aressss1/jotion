@@ -13,8 +13,8 @@ const Hero = () => {
     const { isAuthenticated, isLoading } = useConvexAuth();
 
     return (
-        <div className="flex justify-center items-center py-10 w-fit " >
-            <div className="flex gap-5" >
+        <div className="flex justify-center items-center  py-10 w-full " >
+            <div className="flex flex-col-reverse lg:flex-row gap-5" >
                 <div className="flex flex-col gap-6" >
                     <div className=" text-zinc-950 text-5xl font-bold ">
                         Tired of Notion?<br />Say hi to Jotion
