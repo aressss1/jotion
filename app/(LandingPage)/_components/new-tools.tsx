@@ -28,16 +28,16 @@ const NewToolsSection = () => {
     return (
         <div className="flex justify-center items-center flex-col gap-6 py-10 w-full " >
             <div className="flex flex-col gap-2 text-center " >
-                <div className=" text-zinc-950 text-5xl font-bold">
+                <div className=" text-zinc-950 px-3 md:px-0 text-2xl md:text-5xl font-bold">
                     New tools, new ways to work
                 </div>
-                <div className=" text-black text-opacity-60 text-lg font-medium leading-7">
+                <div className=" text-black px-5 md:px-0 text-opacity-60 text-base md:text-lg font-medium leading-7">
                     We also built in some advanced features for you.
                 </div>
             </div>
             <div className="mx-auto grid md:grid-cols-2 grid-cols-1 gap-6 " >
                 {toolsContent.map((tool) => (
-                    <Card key={tool.toolName} className="text-left shadow-lg max-w-[367px] "  >
+                    <Card key={tool.toolName} className="text-left shadow-lg md:max-w-[367px] w-[297px] "  >
                         <CardHeader>
                             <div>
                                 <Image
