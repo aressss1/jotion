@@ -8,7 +8,7 @@ const font = Poppins({
   weight: ["400", "600"]
 });
 
-export const Logo = () => {
+const Logo = () => {
   return (
     <div className="hidden md:flex items-center gap-x-2">
       <Image
@@ -23,3 +23,5 @@ export const Logo = () => {
     </div>
   )
 }
+
+export default Logo;
