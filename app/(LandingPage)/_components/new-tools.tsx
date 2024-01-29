@@ -28,7 +28,7 @@ const NewToolsSection = () => {
     return (
         <div className="flex justify-center items-center flex-col gap-6 py-10 w-full " >
             <div className="flex flex-col gap-2 text-center " >
-                <div className=" text-zinc-950 px-3 md:px-0 text-2xl md:text-5xl font-bold">
+                <div className=" text-zinc-950 px-3 md:px-0 text-4xl md:text-5xl font-bold">
                     New tools, new ways to work
                 </div>
                 <div className=" text-black px-5 md:px-0 text-opacity-60 text-base md:text-lg font-medium leading-7">
