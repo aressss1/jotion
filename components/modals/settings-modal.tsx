@@ -8,6 +8,7 @@ import {
     DialogHeader 
 } from "../ui/dialog";
 import { Label } from "../ui/label";
+import { ModeToggle } from "../mode-toggle";
 
 const SettingsModal = () => {
     const settings = useSettings();
@@ -30,6 +31,7 @@ const SettingsModal = () => {
                             Customize how Jotion looks on your device
                         </span>
                     </div>
+                    <ModeToggle />
                 </div>
             </DialogContent>
         </Dialog>
