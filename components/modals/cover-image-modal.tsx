@@ -53,7 +53,7 @@ const CoverImageModal = () => {
             <DialogContent>
                 <DialogHeader>
                     <h2 className="text-center text-lg font-semibold" >
-                        CoverImage
+                        Cover Image
                     </h2>
                 </DialogHeader>
                 <SingleImageDropzone 
