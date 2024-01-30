@@ -30,7 +30,7 @@ export function ModeToggle() {
                 <DropdownMenuItem disabled >
                     <div className="flex gap-2" > 
                         Dark
-                        <Badge variant="secondary" >
+                        <Badge variant="default" >
                             Coming soon
                         </Badge>
                     </div>
