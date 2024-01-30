@@ -1,6 +1,6 @@
-### Jotion, Fullstack Notion Clone Developed with Next.js 13, React, ShadcnUI, Tailwind & Convex
+# Jotion, Fullstack Notion Clone Developed with Next.js 13, React, ShadcnUI, Tailwind & Convex
 
-# Preview:
+### Preview:
 
 ![Screenshot (345)](https://github.com/aressss1/jotion/assets/127649710/92978ce1-e44c-41cc-afec-bd8770009254)
 ![Screenshot (346)](https://github.com/aressss1/jotion/assets/127649710/0ce132ad-d640-4e5f-b545-6e6d121c63b2)
@@ -16,7 +16,7 @@
 ![Screenshot (356)](https://github.com/aressss1/jotion/assets/127649710/950917fe-fccb-44e3-a8e5-32d07077910f)
 
 
-# Key Features:
+### Key Features:
 - Real-time database   
 - Notion-style editor 
 - Infinite children documents 
