@@ -2,18 +2,13 @@
 
 ### Preview:
 
-![Screenshot (345)](https://github.com/aressss1/jotion/assets/127649710/92978ce1-e44c-41cc-afec-bd8770009254)
-![Screenshot (346)](https://github.com/aressss1/jotion/assets/127649710/0ce132ad-d640-4e5f-b545-6e6d121c63b2)
-![Screenshot (347)](https://github.com/aressss1/jotion/assets/127649710/fe44352d-c90c-4aab-8e16-b6544d612129)
-![Screenshot (348)](https://github.com/aressss1/jotion/assets/127649710/2c16c5b3-139c-4a97-b326-89957d3a27c1)
-![Screenshot (349)](https://github.com/aressss1/jotion/assets/127649710/b1d8cdfb-75b4-4499-a14d-3ccf822dbb57)
-![Screenshot (350)](https://github.com/aressss1/jotion/assets/127649710/d5ba1fb1-9128-41c3-9ce4-47d7339e7fde)
-![Screenshot (351)](https://github.com/aressss1/jotion/assets/127649710/8d006ddf-80aa-4b00-a96a-895ccd59dbbb)
-![Screenshot (352)](https://github.com/aressss1/jotion/assets/127649710/f661c5d9-fed3-46b6-a948-ee0e61d1b288)
-![Screenshot (353)](https://github.com/aressss1/jotion/assets/127649710/84aa1430-2710-43dd-9289-9a8c2db6be94)
-![Screenshot (354)](https://github.com/aressss1/jotion/assets/127649710/e94ee96b-4602-463a-b585-c971b537d9ec)
-![Screenshot (355)](https://github.com/aressss1/jotion/assets/127649710/a0641a14-e763-4b7d-8499-ea09fbb97556)
-![Screenshot (356)](https://github.com/aressss1/jotion/assets/127649710/950917fe-fccb-44e3-a8e5-32d07077910f)
+![prismify-render-1716800568087](https://github.com/aressss1/jotion/assets/127649710/e0f87477-d12c-4001-85a4-b50aae2b3805)
+![prismify-render-1716800548839](https://github.com/aressss1/jotion/assets/127649710/b1a11bc7-1154-47bc-93d5-0eca1a5d7527)
+![prismify-render-1716800659957](https://github.com/aressss1/jotion/assets/127649710/f124d42d-9149-4e9f-9f03-ce8db3321b4f)
+![prismify-render-1716800645634](https://github.com/aressss1/jotion/assets/127649710/9f87b2a3-57e6-4444-a332-ca71bfa2b7d7)
+![prismify-render-1716800630360](https://github.com/aressss1/jotion/assets/127649710/f5f581db-b5db-400e-a6e9-6a27bc63e6e5)
+![prismify-render-1716800603325](https://github.com/aressss1/jotion/assets/127649710/202da6ab-e652-42d1-a8d0-a6d496a36dd6)
+![prismify-render-1716800586933](https://github.com/aressss1/jotion/assets/127649710/d1a15975-7987-4e22-8608-cc42cfba84b6)
 
 
 ### Key Features:
